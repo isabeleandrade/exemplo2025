@@ -5,7 +5,7 @@
 }
 
 nav {
-    background-color: rgb(116, 108, 34);
+    background-color: rgba(235, 88, 20, 0.973);
     padding: 10px 20px;
     position: relative;
 }
@@ -25,7 +25,7 @@ nav {
 
 .hamburger span {
     height: 4px;
-    background-color: rgb(139, 99, 50);
+    background-color: rgb(132, 2, 158);
 }
 
 ul.menu {
