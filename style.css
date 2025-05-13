@@ -68,7 +68,7 @@ width:100%;
 
 .menu-toggle:checked
 +.hamburger + ul.menu{
-display: flex;
+dysplay:flex;
 }
 
 }
