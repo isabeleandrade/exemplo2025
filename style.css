@@ -1,3 +1,4 @@
+/* Estilo geral da página */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,8 +6,9 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Cabeçalho */
 header {
-    background-color: #3a6351;
+    background-color: #3a6351; /* Cor verde para combinar com o tema rural */
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -15,6 +17,7 @@ header {
 header nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 header nav ul li {
@@ -25,8 +28,15 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.1em;
 }
 
+header nav ul li a:hover {
+    color: #ff7f50; /* Cor de destaque ao passar o mouse */
+    text-decoration: underline;
+}
+
+/* Imagem principal (Hero) */
 .hero {
     position: relative;
     text-align: center;
@@ -48,10 +58,12 @@ header nav ul li a {
 
 .hero-text h1 {
     font-size: 3em;
+    margin: 0;
 }
 
 .hero-text p {
     font-size: 1.5em;
+    margin-top: 10px;
 }
 
 .hero-text a {
@@ -60,26 +72,89 @@ header nav ul li a {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
 }
 
+.hero-text a:hover {
+    background-color: #ff7f50; /* Cor de destaque ao passar o mouse */
+    color: white;
+}
+
+/* Seção Sobre */
 .about {
-    padding: 20px;
+    padding: 40px 20px;
     background-color: white;
     text-align: center;
-}  
-
-.logo img {
-  width: 80%;
-  max-width: 500px;
-  display: block;
-  margin: 20px auto;
-  border-radius: 8px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+.about h2 {
+    font-size: 2em;
+    color: #3a6351;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo img {
+    width: 80%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Rodapé */
 footer {
     background-color: #3a6351;
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividade - Ajustes para telas pequenas */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2em; /* Reduz a fonte em telas menores */
+    }
+
+    .hero-text p {
+        font-size: 1.2em; /* Ajusta o tamanho da fonte do parágrafo */
+    }
+
+    .hero-text a {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    .about p {
+        font-size: 1.1em; /* Ajuste para melhorar a leitura em telas pequenas */
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header nav ul li a {
+        font-size: 1.2em; /* Aumenta o tamanho da fonte para tornar a navegação mais legível em dispositivos móveis */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero img {
+        height: 300px; /* Ajusta a altura da imagem hero em telas muito pequenas */
+    }
 }
