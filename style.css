@@ -1,51 +1,55 @@
 /* Estilo geral da página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #3a6351; /* Cor verde para combinar com o tema rural */
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+    background-color: #2a7d3b; /* Verde para combinar com o tema de natureza */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px; /* Ajusta o tamanho do logo */
 }
 
 header nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
 header nav ul li {
-    display: inline;
-    margin: 0 15px;
+    margin-right: 20px;
 }
 
 header nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 1.1em;
+    font-weight: bold;
 }
 
 header nav ul li a:hover {
-    color: #ff7f50; /* Cor de destaque ao passar o mouse */
     text-decoration: underline;
 }
 
 /* Imagem principal (Hero) */
 .hero {
     position: relative;
-    text-align: center;
-    color: white;
+    overflow: hidden;
 }
 
 .hero img {
     width: 100%;
-    height: 400px;
+    height: auto;
     object-fit: cover;
 }
 
@@ -54,107 +58,65 @@ header nav ul li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 8px;
 }
 
 .hero-text h1 {
-    font-size: 3em;
+    font-size: 2.5rem;
     margin: 0;
 }
 
 .hero-text p {
-    font-size: 1.5em;
-    margin-top: 10px;
+    font-size: 1.2rem;
 }
 
 .hero-text a {
-    background-color: #3a6351;
-    color: white;
+    display: inline-block;
+    margin-top: 20px;
     padding: 10px 20px;
+    background-color: #ff7f50;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    margin-top: 20px;
-    display: inline-block;
 }
 
 .hero-text a:hover {
-    background-color: #ff7f50; /* Cor de destaque ao passar o mouse */
-    color: white;
+    background-color: #e66a3e;
 }
 
-/* Seção Sobre */
+/* Seção "Sobre" */
 .about {
     padding: 40px 20px;
-    background-color: white;
     text-align: center;
+    background-color: #fff;
 }
 
 .about h2 {
-    font-size: 2em;
-    color: #3a6351;
+    font-size: 2rem;
+    color: #2a7d3b;
     margin-bottom: 20px;
 }
 
 .about p {
-    font-size: 1.2em;
+    font-size: 1.1rem;
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* Logo */
-.logo img {
-    width: 80%;
-    max-width: 500px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
-}
-
 /* Rodapé */
 footer {
-    background-color: #3a6351;
+    background-color: #2a7d3b;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 footer p {
     margin: 0;
-}
-
-/* Responsividade - Ajustes para telas pequenas */
-@media (max-width: 768px) {
-    .hero-text h1 {
-        font-size: 2em; /* Reduz a fonte em telas menores */
-    }
-
-    .hero-text p {
-        font-size: 1.2em; /* Ajusta o tamanho da fonte do parágrafo */
-    }
-
-    .hero-text a {
-        font-size: 1em;
-        padding: 8px 16px;
-    }
-
-    .about p {
-        font-size: 1.1em; /* Ajuste para melhorar a leitura em telas pequenas */
-    }
-
-    header nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    header nav ul li a {
-        font-size: 1.2em; /* Aumenta o tamanho da fonte para tornar a navegação mais legível em dispositivos móveis */
-    }
-}
-
-@media (max-width: 480px) {
-    .hero img {
-        height: 300px; /* Ajusta a altura da imagem hero em telas muito pequenas */
-    }
 }
